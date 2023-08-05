@@ -21,21 +21,21 @@ public class OrderRepository {
         return em.find(Order.class, id);
     }
 
-    List<Order> findAll(OrderSearch orderSearch) {
-        // 동적 쿼리
-//        return em.createQuery("select o from Order o join o.member m" +
-//                "where o.status = :status" +
-//                "and m.name like :name", Order.class)
-//                .setParameter("status", orderSearch.getOrderStatus())
-//                .setParameter("name", orderSearch.getMemberName())
-//                .setMaxResults(1000)
-//                .getResultList();
-        /**
-         * JPA Criteria
-         */
-
-        /**
-         * Querydsl로 처리
-         */
-    }
+//    List<Order> findAll(OrderSearch orderSearch) {
+//        // 동적 쿼리
+////        return em.createQuery("select o from Order o join o.member m" +
+////                "where o.status = :status" +
+////                "and m.name like :name", Order.class)
+////                .setParameter("status", orderSearch.getOrderStatus())
+////                .setParameter("name", orderSearch.getMemberName())
+////                .setMaxResults(1000)
+////                .getResultList();
+//        /**
+//         * JPA Criteria
+//         */
+//
+//        /**
+//         * Querydsl로 처리
+//         */
+//    }
 }
