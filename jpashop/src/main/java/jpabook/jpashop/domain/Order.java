@@ -31,7 +31,7 @@ public class Order {
     private List<OrderItem> orderItems = new ArrayList<>();
 
     @OneToOne(fetch = LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "deliver_id") //FK
+    @JoinColumn(name = "delivery_id") //FK
     private Delivery delivery;
 
     private LocalDateTime orderDate;

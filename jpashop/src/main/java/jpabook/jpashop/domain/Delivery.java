@@ -14,7 +14,7 @@ public class Delivery {
 
     @Id
     @GeneratedValue
-    @Column(name = "dellivery_id")
+    @Column(name = "delivery_id")
     private Long id;
 
     @OneToOne(mappedBy = "delivery", fetch = LAZY) // 연관관계의 주인이 아니다.
